@@ -1,0 +1,11 @@
+stages:
+  - check_environment
+
+check_environment:
+  stage: check_environment
+  script:
+    - echo "$CI_SERVER"
+    - echo "$CI_RUNNER_DESCRIPTION"
+    - echo "$CI_RUNNER_ID"
+    - echo "$CI_RUNNER_TAGS"
+    - git pull origin main

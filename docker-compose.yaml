@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  api:
+    image: registry.gitlab.com/vuduchai2001/test-cicd:latest
+    container_name: cicd-api
+    restart: unless-stopped
+    ports:
+      - 3000:3000
