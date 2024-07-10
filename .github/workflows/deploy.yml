@@ -17,7 +17,7 @@ jobs:
         key: ${{ secrets.PRIVATE_KEY }}
         port: 22
         script: |
-          cd ~/home/ubuntu/workspace/test-cicd
+          cd /home/ubuntu/workspace/test-cicd
           git pull origin master
           yarn install
-          pm2 restart 0
+          node dist/main.js
